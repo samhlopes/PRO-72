@@ -93,9 +93,9 @@ export default class RideScreen extends Component {
           //   ToastAndroid.SHORT
           // );
 
-         // Alert.alert(
-         //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!"
-         // );
+          Alert.alert(
+            "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!"
+          );
 
           this.setState({
             bikeAssigned: true
@@ -230,7 +230,7 @@ export default class RideScreen extends Component {
               style={[styles.textinput, { width: "82%" }]}
 
               //onChangeText={() => this.setState({ userId: text })}
-              //onChangeText={this.setState({ userId: text })}
+              onChangeText={this.setState({ userId: text })}
               //onChangeText={text => this.setState({ userId: text })}
               //onChangeText={(text) => this.setState({ userId: text })}
 
